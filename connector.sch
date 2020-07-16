@@ -15,8 +15,6 @@ Comment4 ""
 $EndDescr
 Text HLabel 4725 5000 0    50   Input ~ 0
 I2C1_SDA
-Text HLabel 5425 5300 3    50   Input ~ 0
-GND
 Text HLabel 6125 4900 2    50   Input ~ 0
 I2C1_SCL
 Text HLabel 4725 4900 0    50   Input ~ 0
@@ -39,10 +37,6 @@ Text HLabel 4725 4100 0    50   Input ~ 0
 CAN1_TX
 Text HLabel 6125 4300 2    50   Input ~ 0
 SPI4_MOSI
-Text HLabel 5025 6000 0    50   Input ~ 0
-VCC
-Text HLabel 5175 6200 0    50   Input ~ 0
-GND
 Text HLabel 4725 4500 0    50   Input ~ 0
 SPI1_SS
 Text HLabel 4725 4300 0    50   Input ~ 0
@@ -105,7 +99,7 @@ NoConn ~ 5125 3800
 $Comp
 L Switch:SW_SPST SW3
 U 1 1 5F134DBC
-P 5400 6000
+P 4675 3300
 AR Path="/5F06A0A3/5F134DBC" Ref="SW3"  Part="1" 
 AR Path="/5F152747/5F134DBC" Ref="SW1"  Part="1" 
 AR Path="/5F055BCC/5F134DBC" Ref="SW2"  Part="1" 
@@ -122,17 +116,17 @@ AR Path="/5F16495E/5F134DBC" Ref="SW?"  Part="1"
 AR Path="/5F164980/5F134DBC" Ref="SW?"  Part="1" 
 AR Path="/5F1649A2/5F134DBC" Ref="SW?"  Part="1" 
 AR Path="/5F1649C4/5F134DBC" Ref="SW?"  Part="1" 
-F 0 "SW?" H 5400 6235 50  0000 C CNN
-F 1 "SW_SPST" H 5400 6144 50  0000 C CNN
-F 2 "" H 5400 6000 50  0001 C CNN
-F 3 "~" H 5400 6000 50  0001 C CNN
-	1    5400 6000
+F 0 "SW?" H 4675 3535 50  0000 C CNN
+F 1 "SW_SPST" H 4675 3444 50  0000 C CNN
+F 2 "" H 4675 3300 50  0001 C CNN
+F 3 "~" H 4675 3300 50  0001 C CNN
+	1    4675 3300
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5200 6000 5025 6000
+	4475 3300 4300 3300
 Wire Wire Line
-	5600 6000 5850 6000
+	4875 3300 5125 3300
 $Comp
 L Connector_Generic:Conn_02x02_Odd_Even J6
 U 1 1 5F139BC3
@@ -213,17 +207,38 @@ UART2_RX
 Text Label 5700 2425 0    50   ~ 0
 UART2_TX
 Wire Wire Line
-	5575 6200 5175 6200
-Text Label 5575 6200 0    50   ~ 0
-GND
-Text Label 5850 6000 0    50   ~ 0
-VCC
-Text Label 4725 3300 2    50   ~ 0
-VCC
-Text Label 4725 3400 2    50   ~ 0
-GND
-Wire Wire Line
-	5125 3300 4725 3300
-Wire Wire Line
 	5125 3400 4725 3400
+$Comp
+L power:VCC #PWR?
+U 1 1 5F4B6D92
+P 4300 3300
+F 0 "#PWR?" H 4300 3150 50  0001 C CNN
+F 1 "VCC" H 4317 3473 50  0000 C CNN
+F 2 "" H 4300 3300 50  0001 C CNN
+F 3 "" H 4300 3300 50  0001 C CNN
+	1    4300 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F4B7169
+P 4725 3400
+F 0 "#PWR?" H 4725 3150 50  0001 C CNN
+F 1 "GND" H 4730 3227 50  0000 C CNN
+F 2 "" H 4725 3400 50  0001 C CNN
+F 3 "" H 4725 3400 50  0001 C CNN
+	1    4725 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F4B88F0
+P 5425 5300
+F 0 "#PWR?" H 5425 5050 50  0001 C CNN
+F 1 "GND" H 5430 5127 50  0000 C CNN
+F 2 "" H 5425 5300 50  0001 C CNN
+F 3 "" H 5425 5300 50  0001 C CNN
+	1    5425 5300
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
