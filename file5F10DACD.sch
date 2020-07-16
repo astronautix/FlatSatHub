@@ -1,0 +1,92 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 6 17
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Wire Wire Line
+	5175 4150 5425 4150
+Wire Wire Line
+	5175 4075 5425 4075
+Wire Wire Line
+	5425 4000 5175 4000
+Wire Wire Line
+	5175 3925 5425 3925
+Wire Wire Line
+	5175 3800 5425 3800
+Wire Wire Line
+	5175 3725 5425 3725
+Wire Wire Line
+	5175 3650 5425 3650
+Wire Wire Line
+	5175 3575 5425 3575
+Wire Wire Line
+	5175 3425 5425 3425
+Wire Wire Line
+	5175 3350 5425 3350
+Wire Wire Line
+	5175 3275 5425 3275
+Wire Wire Line
+	5175 3200 5425 3200
+Wire Wire Line
+	5175 3100 5425 3100
+Wire Wire Line
+	5175 3025 5425 3025
+Text GLabel 5175 4150 0    50   Input ~ 0
+SPI1_SS
+Text GLabel 5175 4075 0    50   Input ~ 0
+SPI1_MOSI
+Text GLabel 5175 4000 0    50   Input ~ 0
+SPI1_MISO
+Text GLabel 5175 3925 0    50   Input ~ 0
+SPI1_SCK
+Text GLabel 5175 3800 0    50   Input ~ 0
+I2C2_SCL
+Text GLabel 5175 3725 0    50   Input ~ 0
+I2C2_SDA
+Text GLabel 5175 3650 0    50   Input ~ 0
+I2C1_SCL
+Text GLabel 5175 3575 0    50   Input ~ 0
+I2C1_SDA
+Text GLabel 5175 3425 0    50   Input ~ 0
+SPI4_SS
+Text GLabel 5175 3350 0    50   Input ~ 0
+SPI4_MISO
+Text GLabel 5175 3275 0    50   Input ~ 0
+SPI4_SCK
+Text GLabel 5175 3200 0    50   Input ~ 0
+SPI4_MOSI
+Text GLabel 5175 3100 0    50   Input ~ 0
+CAN1_TX
+Text GLabel 5175 3025 0    50   Input ~ 0
+CAN1_RX
+$Sheet
+S 5425 2975 550  1275
+U 5F10EEE2
+F0 "sheet5F10EEC4" 50
+F1 "connector.sch" 50
+F2 "I2C1_SDA" I L 5425 3575 50 
+F3 "I2C1_SCL" I L 5425 3650 50 
+F4 "I2C2_SDA" I L 5425 3725 50 
+F5 "SPI1_SCK" I L 5425 3925 50 
+F6 "I2C2_SCL" I L 5425 3800 50 
+F7 "SPI1_MISO" I L 5425 4000 50 
+F8 "SPI1_MOSI" I L 5425 4075 50 
+F9 "SPI4_SCK" I L 5425 3275 50 
+F10 "SPI4_MISO" I L 5425 3350 50 
+F11 "CAN1_RX" I L 5425 3025 50 
+F12 "CAN1_TX" I L 5425 3100 50 
+F13 "SPI4_MOSI" I L 5425 3200 50 
+F14 "SPI1_SS" I L 5425 4150 50 
+F15 "SPI4_SS" I L 5425 3425 50 
+$EndSheet
+$EndSCHEMATC
