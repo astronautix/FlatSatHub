@@ -1,0 +1,110 @@
+
+(rules PCB FlatSatHub
+  (snap_angle 
+    fortyfive_degree
+  )
+  (autoroute_settings
+    (fanout on)
+    (eu.mihosoft.freerouting.autoroute on)
+    (postroute on)
+    (vias on)
+    (via_costs 50)
+    (plane_via_costs 5)
+    (start_ripup_costs 100)
+    (start_pass_no 1746)
+    (layer_rule F.Cu
+      (active on)
+      (preferred_direction horizontal)
+      (preferred_direction_trace_costs 1.8)
+      (against_preferred_direction_trace_costs 2.8)
+    )
+    (layer_rule In1.Cu
+      (active on)
+      (preferred_direction vertical)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 2.0)
+    )
+    (layer_rule In2.Cu
+      (active on)
+      (preferred_direction horizontal)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 2.0)
+    )
+    (layer_rule B.Cu
+      (active on)
+      (preferred_direction vertical)
+      (preferred_direction_trace_costs 1.8)
+      (against_preferred_direction_trace_costs 2.8)
+    )
+  )
+  (rule
+    (width 250.0)
+    (clear 200.2)
+    (clear 125.0 (type smd_to_turn_gap))
+    (clear 50.0 (type smd_smd))
+  )
+  (padstack "Via[0-3]_800:400_um"
+    (shape
+      (circle F.Cu 800.0 0.0 0.0)
+    )
+    (shape
+      (circle In1.Cu 800.0 0.0 0.0)
+    )
+    (shape
+      (circle In2.Cu 800.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 800.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (via 
+    "Via[0-3]_800:400_um" "Via[0-3]_800:400_um" default
+  )
+  (via 
+    "Via[0-3]_800:400_um-kicad_default" "Via[0-3]_800:400_um" "kicad_default"
+  )
+  (via_rule
+    default "Via[0-3]_800:400_um"
+  )
+  (via_rule
+    "kicad_default" "Via[0-3]_800:400_um-kicad_default"
+  )
+  (class default
+    (clearance_class default)
+    (via_rule default)
+    (rule
+      (width 250.0)
+    )
+    (circuit 
+      (use_layer F.Cu In1.Cu In2.Cu B.Cu)
+    )
+  )
+  (class "kicad_default"
+    GND VCC /3V3 /5V "/3V3-C-SW" "Net-(C1-Pad10)" "Net-(C1-Pad3)" "/5V-C-SW"
+    "Net-(C2-Pad2)" "Net-(C2-Pad4)" /VBat "/Sheet5F10DACD/sheet5F10EEC4/bus_3v3" "Net-(J2-Pad25)" "/Sheet5F10DACD/sheet5F10EEC4/UART2_TX" "/Sheet5F10DACD/sheet5F10EEC4/UART1_RX" "SPI4_MOSI"
+    "SPI4_SCK" "I2C2_SCL" "I2C1_SCL" "Net-(J2-Pad17)" "Net-(J2-Pad16)" "/Sheet5F10DACD/sheet5F10EEC4/UART1_TX" "CAN1_RX" "SPI4_MISO"
+    "SPI1_MOSI" "SPI1_SCK" "I2C1_SDA" "/Sheet5F10DACD/sheet5F10EEC4/bus_5v" "/Sheet5F10DACD/sheet5F10EEC4/bus_vbat" "Net-(J2-Pad7)" "/Sheet5F10DACD/sheet5F10EEC4/UART2_RX" "CAN1_TX"
+    "SPI4_SS" "SPI1_SS" "SPI1_MISO" "I2C2_SDA" "/sheet5F1123F7/sheet5F10EEC4/bus_3v3" "Net-(J4-Pad25)" "/sheet5F1123F7/sheet5F10EEC4/UART2_TX" "/sheet5F1123F7/sheet5F10EEC4/UART1_RX"
+    "Net-(J4-Pad17)" "Net-(J4-Pad16)" "/sheet5F1123F7/sheet5F10EEC4/UART1_TX" "/sheet5F1123F7/sheet5F10EEC4/bus_5v" "/sheet5F1123F7/sheet5F10EEC4/bus_vbat" "Net-(J4-Pad7)" "/sheet5F1123F7/sheet5F10EEC4/UART2_RX" "/sheet5F112649/sheet5F10EEC4/bus_3v3"
+    "Net-(J6-Pad25)" "/sheet5F112649/sheet5F10EEC4/UART2_TX" "/sheet5F112649/sheet5F10EEC4/UART1_RX" "Net-(J6-Pad17)" "Net-(J6-Pad16)" "/sheet5F112649/sheet5F10EEC4/UART1_TX" "/sheet5F112649/sheet5F10EEC4/bus_5v" "/sheet5F112649/sheet5F10EEC4/bus_vbat"
+    "Net-(J6-Pad7)" "/sheet5F112649/sheet5F10EEC4/UART2_RX" "/sheet5F11264A/sheet5F10EEC4/bus_3v3" "Net-(J8-Pad25)" "/sheet5F11264A/sheet5F10EEC4/UART2_TX" "/sheet5F11264A/sheet5F10EEC4/UART1_RX" "Net-(J8-Pad17)" "Net-(J8-Pad16)"
+    "/sheet5F11264A/sheet5F10EEC4/UART1_TX" "/sheet5F11264A/sheet5F10EEC4/bus_5v" "/sheet5F11264A/sheet5F10EEC4/bus_vbat" "Net-(J8-Pad7)" "/sheet5F11264A/sheet5F10EEC4/UART2_RX" "/sheet5F112855/sheet5F10EEC4/bus_3v3" "Net-(J10-Pad25)" "/sheet5F112855/sheet5F10EEC4/UART2_TX"
+    "/sheet5F112855/sheet5F10EEC4/UART1_RX" "Net-(J10-Pad17)" "Net-(J10-Pad16)" "/sheet5F112855/sheet5F10EEC4/UART1_TX" "/sheet5F112855/sheet5F10EEC4/bus_5v" "/sheet5F112855/sheet5F10EEC4/bus_vbat" "Net-(J10-Pad7)" "/sheet5F112855/sheet5F10EEC4/UART2_RX"
+    "/sheet5F112856/sheet5F10EEC4/bus_3v3" "Net-(J12-Pad25)" "/sheet5F112856/sheet5F10EEC4/UART2_TX" "/sheet5F112856/sheet5F10EEC4/UART1_RX" "Net-(J12-Pad17)" "Net-(J12-Pad16)" "/sheet5F112856/sheet5F10EEC4/UART1_TX" "/sheet5F112856/sheet5F10EEC4/bus_5v"
+    "/sheet5F112856/sheet5F10EEC4/bus_vbat" "Net-(J12-Pad7)" "/sheet5F112856/sheet5F10EEC4/UART2_RX" "/sheet5F112857/sheet5F10EEC4/bus_3v3" "Net-(J14-Pad25)" "/sheet5F112857/sheet5F10EEC4/UART2_TX" "/sheet5F112857/sheet5F10EEC4/UART1_RX" "Net-(J14-Pad17)"
+    "Net-(J14-Pad16)" "/sheet5F112857/sheet5F10EEC4/UART1_TX" "/sheet5F112857/sheet5F10EEC4/bus_5v" "/sheet5F112857/sheet5F10EEC4/bus_vbat" "Net-(J14-Pad7)" "/sheet5F112857/sheet5F10EEC4/UART2_RX" "/sheet5F112858/sheet5F10EEC4/bus_3v3" "Net-(J16-Pad25)"
+    "/sheet5F112858/sheet5F10EEC4/UART2_TX" "/sheet5F112858/sheet5F10EEC4/UART1_RX" "Net-(J16-Pad17)" "Net-(J16-Pad16)" "/sheet5F112858/sheet5F10EEC4/UART1_TX" "/sheet5F112858/sheet5F10EEC4/bus_5v" "/sheet5F112858/sheet5F10EEC4/bus_vbat" "Net-(J16-Pad7)"
+    "/sheet5F112858/sheet5F10EEC4/UART2_RX" /Sheet5F10DACD/sheet5F10EEC4/5V /Sheet5F10DACD/sheet5F10EEC4/3V3 /sheet5F1123F7/sheet5F10EEC4/5V /sheet5F1123F7/sheet5F10EEC4/3V3 /sheet5F112649/sheet5F10EEC4/5V /sheet5F112649/sheet5F10EEC4/3V3 /sheet5F11264A/sheet5F10EEC4/5V
+    /sheet5F11264A/sheet5F10EEC4/3V3 /sheet5F112855/sheet5F10EEC4/5V /sheet5F112855/sheet5F10EEC4/3V3 /sheet5F112856/sheet5F10EEC4/5V /sheet5F112856/sheet5F10EEC4/3V3 /sheet5F112857/sheet5F10EEC4/5V /sheet5F112857/sheet5F10EEC4/3V3 /sheet5F112858/sheet5F10EEC4/5V
+    /sheet5F112858/sheet5F10EEC4/3V3
+    (clearance_class "kicad_default")
+    (via_rule kicad_default)
+    (rule
+      (width 250.0)
+    )
+    (circuit 
+      (use_layer F.Cu In1.Cu In2.Cu B.Cu)
+    )
+  )
+)
