@@ -4,4 +4,5 @@
   (lib (name stm32)(type Legacy)(uri ${KIPRJMOD}/libs/stm32.lib)(options "")(descr ""))
   (lib (name db26hd)(type Legacy)(uri ${KIPRJMOD}/libs/db26hd.lib)(options "")(descr ""))
   (lib (name FlatSatHub)(type Legacy)(uri ${KIPRJMOD}/libs/FlatSatHub.lib)(options "")(descr ""))
+  (lib (name Connector)(type Legacy)(uri ${KIPRJMOD}/Connector.lib)(options "")(descr ""))
 )
