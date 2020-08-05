@@ -1,29 +1,6 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
-# Connector_Generic_Conn_02x02_Odd_Even
-#
-DEF Connector_Generic_Conn_02x02_Odd_Even J 0 40 Y N 1 F N
-F0 "J" 50 100 50 H V C CNN
-F1 "Connector_Generic_Conn_02x02_Odd_Even" 50 -200 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-$FPLIST
- Connector*:*_2x??_*
-$ENDFPLIST
-DRAW
-S -50 -95 0 -105 1 1 6 N
-S -50 5 0 -5 1 1 6 N
-S -50 50 150 -150 1 1 10 f
-S 150 -95 100 -105 1 1 6 N
-S 150 5 100 -5 1 1 6 N
-X Pin_1 1 -200 0 150 R 50 50 1 1 P
-X Pin_2 2 300 0 150 L 50 50 1 1 P
-X Pin_3 3 -200 -100 150 R 50 50 1 1 P
-X Pin_4 4 300 -100 150 L 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
 # Connector_Jack-DC
 #
 DEF Connector_Jack-DC J 0 40 Y Y 1 F N
@@ -301,6 +278,26 @@ F3 "" 0 0 50 H I C CNN
 DRAW
 P 6 0 1 0 0 0 0 -50 50 -50 0 -100 -50 -50 0 -50 N
 X GND 1 0 0 0 D 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# w_connectors_HEADER_4x2
+#
+DEF w_connectors_HEADER_4x2 J 0 0 Y Y 1 F N
+F0 "J" 0 250 60 H V C CNN
+F1 "w_connectors_HEADER_4x2" 0 -250 60 H V C CNN
+F2 "" 0 0 60 H V C CNN
+F3 "" 0 0 60 H V C CNN
+DRAW
+S 50 200 -50 -200 0 1 0 N
+X ~ 1 -150 150 100 R 35 50 1 1 P
+X ~ 2 150 150 100 L 35 50 1 1 P
+X ~ 3 -150 50 100 R 35 50 1 1 P
+X ~ 4 150 50 100 L 35 50 1 1 P
+X ~ 5 -150 -50 100 R 35 50 1 1 P
+X ~ 6 150 -50 100 L 35 50 1 1 P
+X ~ 7 -150 -150 100 R 35 50 1 1 P
+X ~ 8 150 -150 100 L 35 50 1 1 P
 ENDDRAW
 ENDDEF
 #
