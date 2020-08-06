@@ -88,7 +88,7 @@ Wire Wire Line
 Wire Wire Line
 	9150 2700 9150 2625
 Wire Wire Line
-	9150 1575 9150 1475
+	9150 1575 9150 1550
 Wire Wire Line
 	9250 2625 9150 2625
 Connection ~ 9150 2625
@@ -99,7 +99,6 @@ Wire Wire Line
 Wire Wire Line
 	9850 1475 10100 1475
 NoConn ~ 9750 1575
-NoConn ~ 9550 1575
 $Comp
 L power:GND #PWR010
 U 1 1 5F11C603
@@ -2265,4 +2264,11 @@ Text Notes 1825 7300 2    59   ~ 0
 Module
 Text Notes 3400 7300 2    59   ~ 0
 Module
+Wire Wire Line
+	9150 1550 9550 1550
+Wire Wire Line
+	9550 1550 9550 1575
+Connection ~ 9150 1550
+Wire Wire Line
+	9150 1550 9150 1475
 $EndSCHEMATC
