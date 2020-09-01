@@ -116,7 +116,7 @@ AR Path="/5F237C19/5F14DCB5" Ref="J16"  Part="1"
 AR Path="/5F2C117D/5F14DCB5" Ref="J?"  Part="1" 
 F 0 "J4" H 5425 6217 50  0000 C CNN
 F 1 "DB26_Male_HighDensity_MountingHoles" H 5425 6126 50  0000 C CNN
-F 2 "DB-HD-26:DSUB-26-HD_Male_Horizontal_P2.29x1.98mm_EdgePinOffset8.35mm_Housed_MountingHolesOffset10.89mm" H 4475 5000 50  0001 C CNN
+F 2 "Connector_Dsub:DSUB-26-HD_Female_Horizontal_P2.29x1.98mm_EdgePinOffset3.03mm_Housed_MountingHolesOffset4.94mm" H 4475 5000 50  0001 C CNN
 F 3 "https://www.mouser.fr/ProductDetail/Kycon/K66X-A26S-N?qs=C%252BuF95oynlmx3ziDhlO2Bg%3D%3D" H 4475 5000 50  0001 C CNN
 	1    5425 4600
 	1    0    0    -1  
