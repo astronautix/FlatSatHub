@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 9
+Sheet 7 15
 Title ""
 Date ""
 Rev ""
@@ -114,7 +114,8 @@ AR Path="/5F2317DA/5F14DCB5" Ref="J12"  Part="1"
 AR Path="/5F237BED/5F14DCB5" Ref="J14"  Part="1" 
 AR Path="/5F237C19/5F14DCB5" Ref="J16"  Part="1" 
 AR Path="/5F2C117D/5F14DCB5" Ref="J?"  Part="1" 
-F 0 "J4" H 5425 6217 50  0000 C CNN
+AR Path="/5F66A269/5F14DCB5" Ref="J5"  Part="1" 
+F 0 "J14" H 5425 6217 50  0000 C CNN
 F 1 "DB26_Male_HighDensity_MountingHoles" H 5425 6126 50  0000 C CNN
 F 2 "Connector_Dsub:DSUB-26-HD_Female_Horizontal_P2.29x1.98mm_EdgePinOffset3.03mm_Housed_MountingHolesOffset4.94mm" H 4475 5000 50  0001 C CNN
 F 3 "https://www.mouser.fr/ProductDetail/Kycon/K66X-A26S-N?qs=C%252BuF95oynlmx3ziDhlO2Bg%3D%3D" H 4475 5000 50  0001 C CNN
@@ -163,14 +164,6 @@ Wire Wire Line
 	5125 4800 4725 4800
 Wire Wire Line
 	5125 5000 4725 5000
-Text Label 4725 3900 2    50   ~ 0
-UART2_RX
-Text Label 6125 3900 0    50   ~ 0
-UART2_TX
-Text Label 4725 4000 2    50   ~ 0
-UART1_TX
-Text Label 6125 4100 0    50   ~ 0
-UART1_RX
 Wire Wire Line
 	5125 3400 4525 3400
 $Comp
@@ -208,7 +201,8 @@ AR Path="/5F2317DA/5F2D876E" Ref="#PWR0117"  Part="1"
 AR Path="/5F237BED/5F2D876E" Ref="#PWR0120"  Part="1" 
 AR Path="/5F237C19/5F2D876E" Ref="#PWR0123"  Part="1" 
 AR Path="/5F2C117D/5F2D876E" Ref="#PWR?"  Part="1" 
-F 0 "#PWR0105" H 4525 3150 50  0001 C CNN
+AR Path="/5F66A269/5F2D876E" Ref="#PWR064"  Part="1" 
+F 0 "#PWR064" H 4525 3150 50  0001 C CNN
 F 1 "GND" H 4530 3227 50  0000 C CNN
 F 2 "" H 4525 3400 50  0001 C CNN
 F 3 "" H 4525 3400 50  0001 C CNN
@@ -250,46 +244,12 @@ AR Path="/5F2317DA/5F2D876F" Ref="#PWR0118"  Part="1"
 AR Path="/5F237BED/5F2D876F" Ref="#PWR0121"  Part="1" 
 AR Path="/5F237C19/5F2D876F" Ref="#PWR0124"  Part="1" 
 AR Path="/5F2C117D/5F2D876F" Ref="#PWR?"  Part="1" 
-F 0 "#PWR0106" H 5425 5050 50  0001 C CNN
+AR Path="/5F66A269/5F2D876F" Ref="#PWR065"  Part="1" 
+F 0 "#PWR065" H 5425 5050 50  0001 C CNN
 F 1 "GND" H 5430 5127 50  0000 C CNN
 F 2 "" H 5425 5300 50  0001 C CNN
 F 3 "" H 5425 5300 50  0001 C CNN
 	1    5425 5300
-	1    0    0    -1  
-$EndComp
-$Comp
-L Switch:SW_DIP_x03 SW3
-U 1 1 5F14E492
-P 2975 3575
-AR Path="/5F1123F9/5F10EEE2/5F14E492" Ref="SW3"  Part="1" 
-AR Path="/5F11264C/5F10EEE2/5F14E492" Ref="SW4"  Part="1" 
-AR Path="/5F10DACE/5F10EEE2/5F14E492" Ref="SW2"  Part="1" 
-AR Path="/5F11264F/5F10EEE2/5F14E492" Ref="SW5"  Part="1" 
-AR Path="/5F11285A/5F10EEE2/5F14E492" Ref="SW6"  Part="1" 
-AR Path="/5F11285D/5F10EEE2/5F14E492" Ref="SW7"  Part="1" 
-AR Path="/5F112860/5F10EEE2/5F14E492" Ref="SW8"  Part="1" 
-AR Path="/5F112863/5F10EEE2/5F14E492" Ref="SW9"  Part="1" 
-AR Path="/5F1F8EB1/5F14E492" Ref="SW2"  Part="1" 
-AR Path="/5F202513/5F14E492" Ref="SW?"  Part="1" 
-AR Path="/5F214496/5F14E492" Ref="SW?"  Part="1" 
-AR Path="/5F2144C2/5F14E492" Ref="SW?"  Part="1" 
-AR Path="/5F21C578/5F14E492" Ref="SW?"  Part="1" 
-AR Path="/5F21C5A4/5F14E492" Ref="SW?"  Part="1" 
-AR Path="/5F21C5D0/5F14E492" Ref="SW?"  Part="1" 
-AR Path="/5F21C5FC/5F14E492" Ref="SW?"  Part="1" 
-AR Path="/5F22A1CE/5F14E492" Ref="SW3"  Part="1" 
-AR Path="/5F22D207/5F14E492" Ref="SW4"  Part="1" 
-AR Path="/5F22D233/5F14E492" Ref="SW5"  Part="1" 
-AR Path="/5F2317AE/5F14E492" Ref="SW6"  Part="1" 
-AR Path="/5F2317DA/5F14E492" Ref="SW7"  Part="1" 
-AR Path="/5F237BED/5F14E492" Ref="SW8"  Part="1" 
-AR Path="/5F237C19/5F14E492" Ref="SW9"  Part="1" 
-AR Path="/5F2C117D/5F14E492" Ref="SW?"  Part="1" 
-F 0 "SW3" H 2975 4042 50  0000 C CNN
-F 1 "SW_DIP_x03" H 2975 3951 50  0000 C CNN
-F 2 "Button_Switch_THT:SW_DIP_SPSTx03_Slide_9.78x9.8mm_W7.62mm_P2.54mm" H 2975 3575 50  0001 C CNN
-F 3 "~" H 2975 3575 50  0001 C CNN
-	1    2975 3575
 	1    0    0    -1  
 $EndComp
 Text Label 3275 3375 0    50   ~ 0
@@ -310,54 +270,12 @@ Text GLabel 2675 3475 0    50   Input ~ 0
 3V3
 Text GLabel 2675 3575 0    50   Input ~ 0
 5V
-$Comp
-L w_connectors:HEADER_4x2 J2
-U 1 1 5F2F755E
-P 2950 4500
-AR Path="/5F22A1CE/5F2F755E" Ref="J2"  Part="1" 
-AR Path="/5F22D207/5F2F755E" Ref="J3"  Part="1" 
-AR Path="/5F22D233/5F2F755E" Ref="J5"  Part="1" 
-AR Path="/5F2317AE/5F2F755E" Ref="J7"  Part="1" 
-AR Path="/5F2317DA/5F2F755E" Ref="J9"  Part="1" 
-AR Path="/5F237BED/5F2F755E" Ref="J11"  Part="1" 
-AR Path="/5F237C19/5F2F755E" Ref="J13"  Part="1" 
-F 0 "J2" H 2950 4887 60  0000 C CNN
-F 1 "HEADER_4x2" H 2950 4781 60  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x04_P2.54mm_Vertical" H 2950 4500 60  0001 C CNN
-F 3 "" H 2950 4500 60  0000 C CNN
-	1    2950 4500
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2800 4350 2500 4350
-Wire Wire Line
-	2800 4450 2500 4450
-Wire Wire Line
-	2800 4550 2500 4550
-Wire Wire Line
-	2800 4650 2500 4650
-Text Label 2500 4350 2    50   ~ 0
-UART1_RX
-Text Label 2500 4450 2    50   ~ 0
-UART1_TX
-Text Label 2500 4550 2    50   ~ 0
+Text HLabel 4725 3900 0    50   Input ~ 0
 UART2_RX
-Text Label 2500 4650 2    50   ~ 0
+Text HLabel 4725 4000 0    50   Input ~ 0
+UART1_TX
+Text HLabel 6125 3900 2    50   Input ~ 0
 UART2_TX
-Wire Wire Line
-	3400 4350 3100 4350
-Wire Wire Line
-	3400 4450 3100 4450
-Wire Wire Line
-	3400 4550 3100 4550
-Wire Wire Line
-	3400 4650 3100 4650
-Text GLabel 3400 4350 2    50   Input ~ 0
-OBC_UART1_TX
-Text GLabel 3400 4450 2    50   Input ~ 0
-OBC_UART1_RX
-Text GLabel 3400 4550 2    50   Input ~ 0
-OBC_UART2_TX
-Text GLabel 3400 4650 2    50   Input ~ 0
-OBC_UART2_RX
+Text HLabel 6125 4100 2    50   Input ~ 0
+UART1_RX
 $EndSCHEMATC

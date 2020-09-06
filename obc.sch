@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 9 9
+Sheet 9 13
 Title ""
 Date ""
 Rev ""
@@ -247,41 +247,6 @@ F 1 "GND" H 5430 5127 50  0000 C CNN
 F 2 "" H 5425 5300 50  0001 C CNN
 F 3 "" H 5425 5300 50  0001 C CNN
 	1    5425 5300
-	1    0    0    -1  
-$EndComp
-$Comp
-L Switch:SW_DIP_x03 SW3
-U 1 1 5F2D876D
-P 2975 3575
-AR Path="/5F1123F9/5F10EEE2/5F2D876D" Ref="SW3"  Part="1" 
-AR Path="/5F11264C/5F10EEE2/5F2D876D" Ref="SW4"  Part="1" 
-AR Path="/5F10DACE/5F10EEE2/5F2D876D" Ref="SW2"  Part="1" 
-AR Path="/5F11264F/5F10EEE2/5F2D876D" Ref="SW5"  Part="1" 
-AR Path="/5F11285A/5F10EEE2/5F2D876D" Ref="SW6"  Part="1" 
-AR Path="/5F11285D/5F10EEE2/5F2D876D" Ref="SW7"  Part="1" 
-AR Path="/5F112860/5F10EEE2/5F2D876D" Ref="SW8"  Part="1" 
-AR Path="/5F112863/5F10EEE2/5F2D876D" Ref="SW9"  Part="1" 
-AR Path="/5F1F8EB1/5F2D876D" Ref="SW2"  Part="1" 
-AR Path="/5F202513/5F2D876D" Ref="SW?"  Part="1" 
-AR Path="/5F214496/5F2D876D" Ref="SW?"  Part="1" 
-AR Path="/5F2144C2/5F2D876D" Ref="SW?"  Part="1" 
-AR Path="/5F21C578/5F2D876D" Ref="SW?"  Part="1" 
-AR Path="/5F21C5A4/5F2D876D" Ref="SW?"  Part="1" 
-AR Path="/5F21C5D0/5F2D876D" Ref="SW?"  Part="1" 
-AR Path="/5F21C5FC/5F2D876D" Ref="SW?"  Part="1" 
-AR Path="/5F22A1CE/5F2D876D" Ref="SW3"  Part="1" 
-AR Path="/5F22D207/5F2D876D" Ref="SW4"  Part="1" 
-AR Path="/5F22D233/5F2D876D" Ref="SW5"  Part="1" 
-AR Path="/5F2317AE/5F2D876D" Ref="SW6"  Part="1" 
-AR Path="/5F2317DA/5F2D876D" Ref="SW7"  Part="1" 
-AR Path="/5F237BED/5F2D876D" Ref="SW8"  Part="1" 
-AR Path="/5F237C19/5F2D876D" Ref="SW9"  Part="1" 
-AR Path="/5F2C117D/5F2D876D" Ref="SW2"  Part="1" 
-F 0 "SW2" H 2975 4042 50  0000 C CNN
-F 1 "SW_DIP_x03" H 2975 3951 50  0000 C CNN
-F 2 "Button_Switch_THT:SW_DIP_SPSTx03_Slide_9.78x9.8mm_W7.62mm_P2.54mm" H 2975 3575 50  0001 C CNN
-F 3 "~" H 2975 3575 50  0001 C CNN
-	1    2975 3575
 	1    0    0    -1  
 $EndComp
 Text Label 3275 3375 0    50   ~ 0
