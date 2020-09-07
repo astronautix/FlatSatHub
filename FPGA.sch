@@ -2139,25 +2139,25 @@ Wire Wire Line
 	5250 2900 5075 2900
 Wire Wire Line
 	5250 2800 5075 2800
-Text HLabel 3000 2425 0    50   Input ~ 0
+Text HLabel 3000 2825 0    50   Input ~ 0
 MOD2_SPI1_MOSI
-Text HLabel 3000 2525 0    50   Input ~ 0
+Text HLabel 3000 2925 0    50   Input ~ 0
 MOD2_SPI1_MISO
-Text HLabel 3000 2325 0    50   Input ~ 0
+Text HLabel 3000 2725 0    50   Input ~ 0
 MOD2_SPI1_SS
-Text HLabel 3000 2025 0    50   Input ~ 0
+Text HLabel 3000 2425 0    50   Input ~ 0
 MOD2_SPI2_MOSI
-Text HLabel 3000 2225 0    50   Input ~ 0
+Text HLabel 3000 2625 0    50   Input ~ 0
 MOD2_SPI2_MISO
-Text HLabel 3000 2125 0    50   Input ~ 0
+Text HLabel 3000 2525 0    50   Input ~ 0
 MOD2_SPI2_SS
-Text HLabel 5075 4000 0    50   Input ~ 0
+Text HLabel 3000 2125 0    50   Input ~ 0
 MOD2_UART1_TX
-Text HLabel 5075 4200 0    50   Input ~ 0
+Text HLabel 3000 2325 0    50   Input ~ 0
 MOD2_UART1_RX
-Text HLabel 5075 3900 0    50   Input ~ 0
+Text HLabel 3000 2025 0    50   Input ~ 0
 MOD2_UART2_TX
-Text HLabel 5075 4100 0    50   Input ~ 0
+Text HLabel 3000 2225 0    50   Input ~ 0
 MOD2_UART2_RX
 Text HLabel 3000 4125 0    50   Input ~ 0
 MOD3_SPI1_MOSI
@@ -2180,18 +2180,6 @@ MOD3_UART2_TX
 Text HLabel 3000 3525 0    50   Input ~ 0
 MOD3_UART2_RX
 Wire Wire Line
-	5250 4200 5075 4200
-Wire Wire Line
-	5250 4100 5075 4100
-Wire Wire Line
-	5250 4000 5075 4000
-Wire Wire Line
-	5250 3900 5075 3900
-Wire Wire Line
-	3175 2525 3000 2525
-Wire Wire Line
-	3175 2425 3000 2425
-Wire Wire Line
 	3175 2325 3000 2325
 Wire Wire Line
 	3175 2225 3000 2225
@@ -2199,6 +2187,18 @@ Wire Wire Line
 	3175 2125 3000 2125
 Wire Wire Line
 	3175 2025 3000 2025
+Wire Wire Line
+	3175 2925 3000 2925
+Wire Wire Line
+	3175 2825 3000 2825
+Wire Wire Line
+	3175 2725 3000 2725
+Wire Wire Line
+	3175 2625 3000 2625
+Wire Wire Line
+	3175 2525 3000 2525
+Wire Wire Line
+	3175 2425 3000 2425
 Wire Wire Line
 	3175 4225 3000 4225
 Wire Wire Line
@@ -2419,4 +2419,138 @@ Wire Wire Line
 	5250 1900 5075 1900
 Wire Wire Line
 	5250 1800 5075 1800
+$Comp
+L Connector_Generic:Conn_01x06 J2
+U 1 1 5F984670
+P 7200 1025
+F 0 "J2" H 7280 1017 50  0000 L CNN
+F 1 "Conn_01x06" H 7280 926 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 7200 1025 50  0001 C CNN
+F 3 "~" H 7200 1025 50  0001 C CNN
+	1    7200 1025
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F9A2119
+P 6900 1450
+AR Path="/5E4285EC/5F9A2119" Ref="#PWR?"  Part="1" 
+AR Path="/5FC0CE7F/5F9A2119" Ref="#PWR?"  Part="1" 
+AR Path="/5F61B694/5F9A2119" Ref="#PWR?"  Part="1" 
+AR Path="/5F420A26/5F62EEDC/5F9A2119" Ref="#PWR?"  Part="1" 
+AR Path="/5F604EE6/5F9A2119" Ref="#PWR0152"  Part="1" 
+F 0 "#PWR0152" H 6900 1200 50  0001 C CNN
+F 1 "GND" H 6905 1277 50  0000 C CNN
+F 2 "" H 6900 1450 50  0001 C CNN
+F 3 "" H 6900 1450 50  0001 C CNN
+	1    6900 1450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6900 1450 6900 1325
+Wire Wire Line
+	6900 1325 7000 1325
+Text Label 6625 1225 0    50   ~ 0
+3.3V
+Wire Wire Line
+	7000 1225 6625 1225
+Wire Wire Line
+	7000 825  6725 825 
+Wire Wire Line
+	7000 925  6725 925 
+Wire Wire Line
+	7000 1025 6725 1025
+Wire Wire Line
+	7000 1125 6725 1125
+Text Label 6725 825  0    50   ~ 0
+IO1
+Text Label 6725 925  0    50   ~ 0
+IO2
+Text Label 6725 1025 0    50   ~ 0
+IO3
+Text Label 6725 1125 0    50   ~ 0
+IO4
+Wire Wire Line
+	5250 3900 4975 3900
+Wire Wire Line
+	5250 4000 4975 4000
+Wire Wire Line
+	5250 4100 4975 4100
+Wire Wire Line
+	5250 4200 4975 4200
+Text Label 4975 3900 0    50   ~ 0
+IO1
+Text Label 4975 4000 0    50   ~ 0
+IO2
+Text Label 4975 4100 0    50   ~ 0
+IO3
+Text Label 4975 4200 0    50   ~ 0
+IO4
+$Comp
+L Connector_Generic:Conn_01x06 J3
+U 1 1 5FA793BF
+P 9075 975
+F 0 "J3" H 9155 967 50  0000 L CNN
+F 1 "Conn_01x06" H 9155 876 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 9075 975 50  0001 C CNN
+F 3 "~" H 9075 975 50  0001 C CNN
+	1    9075 975 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FA793C9
+P 8775 1400
+AR Path="/5E4285EC/5FA793C9" Ref="#PWR?"  Part="1" 
+AR Path="/5FC0CE7F/5FA793C9" Ref="#PWR?"  Part="1" 
+AR Path="/5F61B694/5FA793C9" Ref="#PWR?"  Part="1" 
+AR Path="/5F420A26/5F62EEDC/5FA793C9" Ref="#PWR?"  Part="1" 
+AR Path="/5F604EE6/5FA793C9" Ref="#PWR0153"  Part="1" 
+F 0 "#PWR0153" H 8775 1150 50  0001 C CNN
+F 1 "GND" H 8780 1227 50  0000 C CNN
+F 2 "" H 8775 1400 50  0001 C CNN
+F 3 "" H 8775 1400 50  0001 C CNN
+	1    8775 1400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8775 1400 8775 1275
+Wire Wire Line
+	8775 1275 8875 1275
+Wire Wire Line
+	8875 1175 8500 1175
+Wire Wire Line
+	8875 775  8600 775 
+Wire Wire Line
+	8875 875  8600 875 
+Wire Wire Line
+	8875 975  8600 975 
+Wire Wire Line
+	8875 1075 8600 1075
+Text Label 8500 1175 0    50   ~ 0
+3.3V
+Text Label 8600 775  0    50   ~ 0
+IO5
+Text Label 8600 875  0    50   ~ 0
+IO6
+Text Label 8600 975  0    50   ~ 0
+IO7
+Text Label 8600 1075 0    50   ~ 0
+IO8
+Wire Wire Line
+	3175 3025 2900 3025
+Wire Wire Line
+	3175 3125 2900 3125
+Wire Wire Line
+	3175 3225 2900 3225
+Wire Wire Line
+	5250 3800 4975 3800
+Text Label 2900 3225 0    50   ~ 0
+IO5
+Text Label 2900 3125 0    50   ~ 0
+IO6
+Text Label 2900 3025 0    50   ~ 0
+IO7
+Text Label 4975 3800 0    50   ~ 0
+IO8
 $EndSCHEMATC
