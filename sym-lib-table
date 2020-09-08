@@ -1,8 +1,10 @@
 (sym_lib_table
   (lib (name x-logo)(type Legacy)(uri ${KIPRJMOD}/libs/x-logo.lib)(options "")(descr ""))
   (lib (name w_connectors)(type Legacy)(uri ${KIPRJMOD}/libs/w_connectors.lib)(options "")(descr ""))
-  (lib (name stm32)(type Legacy)(uri ${KIPRJMOD}/libs/stm32.lib)(options "")(descr ""))
   (lib (name db26hd)(type Legacy)(uri ${KIPRJMOD}/libs/db26hd.lib)(options "")(descr ""))
   (lib (name FlatSatHub)(type Legacy)(uri ${KIPRJMOD}/libs/FlatSatHub.lib)(options "")(descr ""))
   (lib (name Connector)(type Legacy)(uri ${KIPRJMOD}/Connector.lib)(options "")(descr ""))
+  (lib (name TPS54560B)(type Legacy)(uri ${KIPRJMOD}/libs/TPS54560B.lib)(options "")(descr ""))
+  (lib (name ICE40)(type Legacy)(uri ${KIPRJMOD}/libs/ICE40.lib)(options "")(descr ""))
+  (lib (name TPS6240x)(type Legacy)(uri ${KIPRJMOD}/libs/TPS6240x.lib)(options "")(descr ""))
 )

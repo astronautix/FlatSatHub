@@ -1,0 +1,138 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 9 15
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Sheet
+S 3175 1225 850  500 
+U 5F4EF937
+F0 "Sheet5F4EF936" 50
+F1 "TPS54560.sch" 50
+F2 "VIN" I L 3175 1350 50 
+F3 "VOUT" O R 4025 1450 50 
+F4 "EN" I L 3175 1650 50 
+$EndSheet
+$Sheet
+S 3200 2250 850  500 
+U 5F54C416
+F0 "sheet5F54C416" 50
+F1 "TPS54560.sch" 50
+F2 "VIN" I L 3200 2375 50 
+F3 "VOUT" O R 4050 2500 50 
+F4 "EN" I L 3200 2675 50 
+$EndSheet
+Text HLabel 1450 1825 0    50   Input ~ 0
+VBAT
+Wire Wire Line
+	1450 1825 1675 1825
+Wire Wire Line
+	1675 1825 1675 1350
+Wire Wire Line
+	1675 1350 3175 1350
+Wire Wire Line
+	3200 2375 1675 2375
+Wire Wire Line
+	1675 2375 1675 1825
+Connection ~ 1675 1825
+Wire Wire Line
+	4025 1450 4175 1450
+Text HLabel 4175 1450 2    50   Output ~ 0
+5V
+Wire Wire Line
+	4050 2500 4200 2500
+Text HLabel 4200 2500 2    50   Output ~ 0
+3.3V
+$Comp
+L Switch:SW_DIP_x02 SW10
+U 1 1 5F5A7AFA
+P 2550 2000
+F 0 "SW10" H 2550 2367 50  0000 C CNN
+F 1 "SW_DIP_x02" H 2550 2276 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_DIP_SPSTx02_Slide_9.78x7.26mm_W7.62mm_P2.54mm" H 2550 2000 50  0001 C CNN
+F 3 "~" H 2550 2000 50  0001 C CNN
+	1    2550 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR04
+U 1 1 5F5A966A
+P 2150 1950
+F 0 "#PWR04" H 2150 1700 50  0001 C CNN
+F 1 "GND" V 2155 1822 50  0000 R CNN
+F 2 "" H 2150 1950 50  0001 C CNN
+F 3 "" H 2150 1950 50  0001 C CNN
+	1    2150 1950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2975 1900 2975 1650
+Wire Wire Line
+	2975 1650 3175 1650
+Wire Wire Line
+	2850 1900 2975 1900
+Wire Wire Line
+	2850 2000 2975 2000
+Wire Wire Line
+	2975 2000 2975 2675
+Wire Wire Line
+	2975 2675 3200 2675
+Wire Wire Line
+	2250 1900 2200 1900
+Wire Wire Line
+	2200 1900 2200 1950
+Wire Wire Line
+	2200 2000 2250 2000
+Wire Wire Line
+	2150 1950 2200 1950
+Connection ~ 2200 1950
+Wire Wire Line
+	2200 1950 2200 2000
+$Sheet
+S 3625 3500 875  625 
+U 5F698D25
+F0 "Sheet5F698D24" 50
+F1 "FPGA_power.sch" 50
+F2 "2.5V" O R 4500 3750 50 
+F3 "5V" I L 3625 3800 50 
+F4 "1.2V" O R 4500 3900 50 
+F5 "3.3V" O R 4500 3600 50 
+$EndSheet
+$Sheet
+S 2425 3575 850  500 
+U 5F69D9D1
+F0 "sheet5F69D9D1" 50
+F1 "TPS54560.sch" 50
+F2 "VIN" I L 2425 3700 50 
+F3 "VOUT" O R 3275 3800 50 
+F4 "EN" I L 2425 4000 50 
+$EndSheet
+Wire Wire Line
+	3275 3800 3625 3800
+Wire Wire Line
+	1675 3700 2425 3700
+Wire Wire Line
+	1675 2375 1675 3700
+Connection ~ 1675 2375
+Wire Wire Line
+	4500 3600 4650 3600
+Wire Wire Line
+	4500 3750 4650 3750
+Wire Wire Line
+	4500 3900 4650 3900
+Text HLabel 4650 3600 2    50   Output ~ 0
+FPGA_3.3V
+Text HLabel 4650 3750 2    50   Output ~ 0
+FPGA_2.5V
+Text HLabel 4650 3900 2    50   Output ~ 0
+FPGA_1.2V
+$EndSCHEMATC
